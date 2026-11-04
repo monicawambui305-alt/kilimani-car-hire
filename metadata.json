@@ -1,0 +1,6 @@
+{
+  "name": "Kilimani Car Hire Services",
+  "description": "Premier luxury and executive car rental agency in Kilimani, Nairobi. Offering self-drive, chauffeured SUVs, airport transfers, and Airbnb guest delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
