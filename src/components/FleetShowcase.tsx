@@ -41,11 +41,6 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
     setActiveCategory(cat);
   };
 
-  const handleOpenDetailModal = (car: Vehicle) => {
-    sound.playClick();
-    setSelectedModalCar(car);
-  };
-
   const handleCompareClick = (carId: string) => {
     sound.playClick();
     if (onOpenCompareModal) {
@@ -54,7 +49,7 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
   };
 
   return (
-    <section id="fleet" className="py-16 sm:py-24 bg-slate-950 relative overflow-hidden border-t border-cyan-500/20">
+    <section id="fleet" className="py-16 sm:py-24 bg-slate-950 relative overflow-hidden border-t border-emerald-500/20">
       {/* High-Clarity Background Image: Luxury Nairobi Fleet Showroom */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
@@ -74,10 +69,10 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 sm:pb-12 border-b border-cyan-500/20"
+          className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 sm:pb-12 border-b border-emerald-500/20"
         >
           <div>
-            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold tracking-wider text-cyan-400 uppercase mb-2">
+            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold tracking-wider text-emerald-400 uppercase mb-2">
               <span>Prime Carhire Ojijo Rd Fleet</span>
               <span aria-hidden="true">·</span>
               <span>100% Insured Fleet</span>
@@ -100,9 +95,9 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
                   sound.playClick();
                   onOpenCompareModal();
                 }}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-cyan-300 border border-cyan-500/40 text-xs font-bold transition-all shadow-md cursor-pointer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-emerald-300 border border-emerald-500/40 text-xs font-bold transition-all shadow-md cursor-pointer"
               >
-                <Scale className="w-4 h-4 text-cyan-400" />
+                <Scale className="w-4 h-4 text-emerald-400" />
                 <span>Compare Specs</span>
               </button>
             )}
@@ -112,9 +107,9 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => sound.playCarChirp()}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-all shadow-md shadow-emerald-950/40"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-xs transition-all shadow-md shadow-emerald-950/40 font-display"
             >
-              <WhatsAppIcon className="w-4 h-4 fill-white" />
+              <WhatsAppIcon className="w-4 h-4 fill-slate-950" />
               <span>Inquire All Rates</span>
             </a>
           </div>
@@ -135,7 +130,7 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
                 onClick={() => handleCategoryChange(tab.id)}
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all whitespace-nowrap cursor-pointer ${
                   activeCategory === tab.id
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/25'
+                    ? 'bg-gradient-to-r from-emerald-400 to-teal-500 text-slate-950 font-bold shadow-md shadow-emerald-500/25'
                     : 'bg-slate-900/80 text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700'
                 }`}
               >
@@ -145,7 +140,7 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
           </div>
 
           <div className="text-xs text-slate-400 font-medium">
-            Showing <span className="text-cyan-400 font-bold">{filteredVehicles.length}</span> Verified Vehicles
+            Showing <span className="text-emerald-400 font-bold">{filteredVehicles.length}</span> Verified Vehicles
           </div>
         </div>
 
@@ -159,7 +154,7 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.5, delay: idx * 0.05, ease: [0.16, 1, 0.3, 1] }}
-                className="group rounded-3xl bg-slate-900/80 backdrop-blur-md border border-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300 overflow-hidden flex flex-col justify-between shadow-xl shadow-slate-950/50 hover:shadow-cyan-950/30"
+                className="group rounded-3xl bg-slate-900/80 backdrop-blur-md border border-emerald-500/20 hover:border-emerald-400/50 transition-all duration-300 overflow-hidden flex flex-col justify-between shadow-xl shadow-slate-950/50 hover:shadow-emerald-950/30"
               >
                 {/* Image Section */}
                 <div className="relative h-60 sm:h-64 overflow-hidden bg-slate-950">
@@ -176,7 +171,7 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
 
                   {/* Badges */}
                   <div className="absolute top-3 left-3 flex flex-col gap-1.5 items-start">
-                    <span className="px-3 py-1 rounded-lg bg-cyan-950/90 backdrop-blur-md border border-cyan-500/40 text-xs font-mono font-bold text-cyan-300 shadow-md">
+                    <span className="px-3 py-1 rounded-lg bg-emerald-950/90 backdrop-blur-md border border-emerald-500/40 text-xs font-mono font-bold text-emerald-300 shadow-md">
                       Plate: {car.plateNumber}
                     </span>
                     <span className="px-2.5 py-0.5 rounded-md bg-slate-900/85 backdrop-blur-sm border border-slate-700 text-[11px] font-semibold text-slate-200">
@@ -188,7 +183,7 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
                   <div className="absolute top-3 right-3">
                     <button
                       onClick={() => handleCompareClick(car.id)}
-                      className="p-2 rounded-xl bg-slate-900/90 hover:bg-cyan-600 text-cyan-300 hover:text-white border border-cyan-500/40 backdrop-blur-md transition-all shadow-md cursor-pointer"
+                      className="p-2 rounded-xl bg-slate-900/90 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/40 backdrop-blur-md transition-all shadow-md cursor-pointer"
                       title="Compare this vehicle side-by-side"
                     >
                       <Scale className="w-4 h-4" />
@@ -204,26 +199,26 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
                 {/* Card Content */}
                 <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold font-display text-white group-hover:text-cyan-400 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold font-display text-white group-hover:text-emerald-400 transition-colors">
                       {car.name}
                     </h3>
 
                     {/* Spec Grid */}
                     <div className="grid grid-cols-2 gap-2.5 pt-3 pb-2 text-xs text-slate-300 border-b border-slate-800">
                       <div className="flex items-center gap-2">
-                        <Users className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                        <Users className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                         <span>{car.specs.seats} Seats</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Gauge className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                        <Gauge className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                         <span>{car.specs.drive} Drive</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Fuel className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                        <Fuel className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                         <span>{car.specs.fuel} · {car.specs.consumption}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Briefcase className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                        <Briefcase className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                         <span>{car.specs.luggage}</span>
                       </div>
                     </div>
@@ -243,7 +238,7 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
                   <div className="pt-3 border-t border-slate-800/80 flex flex-col gap-2">
                     <div className="flex items-center justify-between text-xs">
                       <span className="text-slate-400">Daily / Weekly Rate:</span>
-                      <span className="text-cyan-400 font-semibold italic">Inquire on WhatsApp</span>
+                      <span className="text-emerald-400 font-semibold italic">Inquire on WhatsApp</span>
                     </div>
 
                     {/* Card Actions */}
@@ -253,7 +248,7 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
                           sound.playCarChirp();
                           onSelectCarForBooking(car);
                         }}
-                        className="py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold text-xs transition-all shadow-md shadow-cyan-500/20 text-center cursor-pointer"
+                        className="py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-xs transition-all shadow-md shadow-emerald-500/20 text-center cursor-pointer font-display"
                       >
                         Reserve Now
                       </button>
@@ -265,9 +260,9 @@ export const FleetShowcase: React.FC<FleetShowcaseProps> = ({
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => sound.playClick()}
-                        className="py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-all flex items-center justify-center gap-1.5 shadow-md shadow-emerald-950/40"
+                        className="py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-emerald-500/30 text-emerald-300 font-bold text-xs transition-all flex items-center justify-center gap-1.5 shadow-md cursor-pointer"
                       >
-                        <WhatsAppIcon className="w-3.5 h-3.5 fill-white" />
+                        <WhatsAppIcon className="w-3.5 h-3.5 fill-emerald-400" />
                         <span>Quote</span>
                       </a>
                     </div>

@@ -118,9 +118,9 @@ export const Hero: React.FC<HeroProps> = ({
             className="lg:col-span-7 space-y-5 sm:space-y-6"
           >
             {/* Trust Kicker */}
-            <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs tracking-wider text-cyan-300 font-semibold uppercase">
-              <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-400/30 text-cyan-300">
-                <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs tracking-wider text-emerald-300 font-semibold uppercase">
+              <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300">
+                <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
                 Ojijo Rd, Nairobi
               </span>
               <span className="text-slate-500 hidden sm:inline" aria-hidden="true">·</span>
@@ -135,10 +135,10 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             {/* Main Headline with frosted text backing for supreme readability */}
-            <div className="p-4 sm:p-6 rounded-3xl bg-slate-950/60 backdrop-blur-md border border-cyan-500/20 shadow-xl space-y-3">
+            <div className="p-4 sm:p-6 rounded-3xl bg-slate-950/60 backdrop-blur-md border border-emerald-500/20 shadow-xl space-y-3">
               <h1 className="text-3xl sm:text-5xl lg:text-5xl font-black tracking-tight text-white leading-[1.15] font-display">
                 Premier Luxury & Executive Car Hire on{' '}
-                <span className="cyan-gradient-text">Ojijo Road, Nairobi</span>
+                <span className="emerald-gradient-text">Ojijo Road, Nairobi</span>
               </h1>
 
               {/* Subtitle */}
@@ -154,7 +154,7 @@ export const Hero: React.FC<HeroProps> = ({
                   sound.playClick();
                   setActiveTab('fleet');
                 }}
-                className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-2 cursor-pointer"
+                className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-emerald-500/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-2 cursor-pointer font-display"
               >
                 <Car className="w-4 h-4" />
                 <span>Explore Fleet & Specs</span>
@@ -167,9 +167,9 @@ export const Hero: React.FC<HeroProps> = ({
                     sound.playClick();
                     onOpenCompare();
                   }}
-                  className="px-5 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-cyan-300 font-bold text-sm border border-cyan-500/40 hover:border-cyan-400 transition-all flex items-center gap-2 cursor-pointer shadow-md"
+                  className="px-5 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-emerald-300 font-bold text-sm border border-emerald-500/40 hover:border-emerald-400 transition-all flex items-center gap-2 cursor-pointer shadow-md"
                 >
-                  <Scale className="w-4 h-4 text-cyan-400" />
+                  <Scale className="w-4 h-4 text-emerald-400" />
                   <span>Compare Vehicles</span>
                 </button>
               )}
@@ -189,15 +189,15 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Micro Trust Points */}
             <div className="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-300">
               <span className="flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-cyan-400" />
+                <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 Comprehensive Insurance Included
               </span>
               <span className="flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-cyan-400" />
+                <Clock className="w-4 h-4 text-emerald-400" />
                 Fast 10-Min Doorstep Delivery
               </span>
               <span className="flex items-center gap-1.5">
-                <MapPin className="w-4 h-4 text-cyan-400" />
+                <MapPin className="w-4 h-4 text-emerald-400" />
                 Ojijo Rd Depot · Plus Code PRJ6+XJ
               </span>
             </div>
@@ -210,15 +210,15 @@ export const Hero: React.FC<HeroProps> = ({
             transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-5"
           >
-            <div className="p-6 sm:p-7 rounded-3xl bg-slate-900/85 backdrop-blur-xl border border-cyan-500/30 shadow-2xl shadow-cyan-950/50 space-y-5">
+            <div className="p-6 sm:p-7 rounded-3xl bg-slate-900/85 backdrop-blur-xl border border-emerald-500/30 shadow-2xl shadow-emerald-950/50 space-y-5">
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <div className="flex items-center gap-2">
-                  <div className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
                   <h3 className="font-display font-bold text-base sm:text-lg text-white">
                     Quick Booking Inquiry
                   </h3>
                 </div>
-                <span className="text-[11px] font-semibold text-cyan-400 px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20">
+                <span className="text-[11px] font-semibold text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
                   Instant Response
                 </span>
               </div>
@@ -233,7 +233,7 @@ export const Hero: React.FC<HeroProps> = ({
                   }}
                   className={`py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
                     serviceType === 'self_drive'
-                      ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md'
+                      ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 shadow-md font-display'
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
@@ -247,7 +247,7 @@ export const Hero: React.FC<HeroProps> = ({
                   }}
                   className={`py-2 text-xs font-bold rounded-lg transition-all cursor-pointer ${
                     serviceType === 'chauffeur'
-                      ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md'
+                      ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 shadow-md font-display'
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
@@ -259,7 +259,7 @@ export const Hero: React.FC<HeroProps> = ({
                 {/* Vehicle Selection */}
                 <div className="space-y-1.5">
                   <label className="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
-                    <Car className="w-3.5 h-3.5 text-cyan-400" />
+                    <Car className="w-3.5 h-3.5 text-emerald-400" />
                     Select Vehicle Model
                   </label>
                   <select
@@ -268,7 +268,7 @@ export const Hero: React.FC<HeroProps> = ({
                       sound.playClick();
                       setSelectedModel(e.target.value);
                     }}
-                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm font-medium text-white focus:outline-none focus:border-cyan-400 cursor-pointer"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm font-medium text-white focus:outline-none focus:border-emerald-400 cursor-pointer"
                   >
                     {FLEET_DATA.map((v) => (
                       <option key={v.id} value={v.id}>
@@ -282,27 +282,27 @@ export const Hero: React.FC<HeroProps> = ({
                 <div className="grid grid-cols-2 gap-3">
                   <div className="space-y-1.5">
                     <label className="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
-                      <Calendar className="w-3.5 h-3.5 text-cyan-400" />
+                      <Calendar className="w-3.5 h-3.5 text-emerald-400" />
                       Pickup Date
                     </label>
                     <input
                       type="date"
                       value={pickupDate}
                       onChange={(e) => setPickupDate(e.target.value)}
-                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-400"
                     />
                   </div>
 
                   <div className="space-y-1.5">
                     <label className="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
-                      <Calendar className="w-3.5 h-3.5 text-cyan-400" />
+                      <Calendar className="w-3.5 h-3.5 text-emerald-400" />
                       Return Date
                     </label>
                     <input
                       type="date"
                       value={returnDate}
                       onChange={(e) => setReturnDate(e.target.value)}
-                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-400"
                     />
                   </div>
                 </div>
@@ -310,7 +310,7 @@ export const Hero: React.FC<HeroProps> = ({
                 {/* Pickup Location */}
                 <div className="space-y-1.5">
                   <label className="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
-                    <MapPin className="w-3.5 h-3.5 text-cyan-400" />
+                    <MapPin className="w-3.5 h-3.5 text-emerald-400" />
                     Pickup / Handover Location
                   </label>
                   <select
@@ -319,7 +319,7 @@ export const Hero: React.FC<HeroProps> = ({
                       sound.playClick();
                       setSelectedLocation(e.target.value);
                     }}
-                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm font-medium text-white focus:outline-none focus:border-cyan-400 cursor-pointer"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm font-medium text-white focus:outline-none focus:border-emerald-400 cursor-pointer"
                   >
                     <option value="Ojijo Rd Depot Handover (Parklands / Westlands)">Ojijo Rd Depot Handover (Walk-in / Free)</option>
                     <option value="Westlands Doorstep (Apartment / Hotel)">Westlands Doorstep (Apartment / Hotel)</option>
@@ -334,7 +334,7 @@ export const Hero: React.FC<HeroProps> = ({
                 {/* Submit Action */}
                 <button
                   type="submit"
-                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-sm tracking-wide shadow-xl shadow-cyan-500/25 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer mt-2"
+                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-black text-sm tracking-wide shadow-xl shadow-emerald-500/25 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer mt-2 font-display"
                 >
                   <span>Proceed to Booking Confirmation</span>
                   <ArrowRight className="w-4 h-4" />
@@ -343,7 +343,7 @@ export const Hero: React.FC<HeroProps> = ({
 
               <div className="flex items-center justify-between text-[11px] text-slate-400 pt-1 border-t border-slate-800/80">
                 <span>No upfront charge · Rates confirmed on WhatsApp</span>
-                <span className="text-cyan-400 font-semibold">0104 709282</span>
+                <span className="text-emerald-400 font-semibold">0104 709282</span>
               </div>
             </div>
           </motion.div>
@@ -351,10 +351,10 @@ export const Hero: React.FC<HeroProps> = ({
       </div>
 
       {/* Slide Navigation Dots & Scenic Indicator Bar */}
-      <div className="relative z-10 border-t border-cyan-500/15 bg-slate-950/80 backdrop-blur-md py-3 px-4">
+      <div className="relative z-10 border-t border-emerald-500/15 bg-slate-950/80 backdrop-blur-md py-3 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-300">
           <div className="flex items-center gap-2">
-            <span className="text-cyan-400 font-bold uppercase tracking-wider text-[11px]">Active Panorama:</span>
+            <span className="text-emerald-400 font-bold uppercase tracking-wider text-[11px]">Active Panorama:</span>
             <span className="font-medium text-white truncate max-w-xs sm:max-w-md">
               {HERO_SLIDES[currentSlide]?.headline}
             </span>
@@ -368,7 +368,7 @@ export const Hero: React.FC<HeroProps> = ({
                 aria-label={`Go to scenic slide ${idx + 1}`}
                 className={`transition-all duration-300 rounded-full cursor-pointer ${
                   idx === currentSlide
-                    ? 'w-7 h-2 bg-gradient-to-r from-cyan-400 to-blue-500'
+                    ? 'w-7 h-2 bg-gradient-to-r from-emerald-400 to-teal-500'
                     : 'w-2 h-2 bg-slate-700 hover:bg-slate-500'
                 }`}
               />

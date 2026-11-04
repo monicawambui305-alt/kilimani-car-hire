@@ -29,7 +29,7 @@ export const ReviewsAndLocation: React.FC = () => {
   };
 
   return (
-    <section id="about" className="relative py-16 sm:py-24 bg-slate-950 overflow-hidden border-t border-cyan-500/20">
+    <section id="about" className="relative py-16 sm:py-24 bg-slate-950 overflow-hidden border-t border-emerald-500/20">
       {/* High-Clarity Background Image: Nairobi Upscale Street and Location */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
@@ -51,8 +51,8 @@ export const ReviewsAndLocation: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-2 sm:space-y-3"
         >
-          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-cyan-400 uppercase">
-            <MapPin className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-emerald-400 uppercase">
+            <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
             <span>Prime Carhire Depot & Headquarters</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight font-display break-words px-2">
@@ -70,12 +70,12 @@ export const ReviewsAndLocation: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.65, delay: 0.1 }}
-            className="lg:col-span-5 bg-slate-900/85 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-cyan-500/30 flex flex-col justify-between space-y-6 shadow-2xl shadow-cyan-950/50"
+            className="lg:col-span-5 bg-slate-900/85 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-emerald-500/30 flex flex-col justify-between space-y-6 shadow-2xl shadow-emerald-950/50"
           >
             <div className="space-y-5">
               {/* Badge & Agency Type */}
               <div className="flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-bold uppercase tracking-wider">
+                <span className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-wider font-display">
                   Car Rental Agency
                 </span>
                 <span className="flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded-full border border-emerald-500/30">
@@ -89,7 +89,7 @@ export const ReviewsAndLocation: React.FC = () => {
                 <h3 className="text-2xl sm:text-3xl font-bold font-display text-white">
                   Prime Carhire
                 </h3>
-                <p className="text-sm text-cyan-400 font-medium mt-1 flex items-center gap-1.5">
+                <p className="text-sm text-emerald-400 font-medium mt-1 flex items-center gap-1.5">
                   <Building className="w-4 h-4" />
                   <span>Ojijo Rd, Parklands / Westlands, Nairobi</span>
                 </p>
@@ -98,7 +98,7 @@ export const ReviewsAndLocation: React.FC = () => {
               {/* Business Details Grid */}
               <div className="space-y-3 pt-3 border-t border-slate-800 text-sm">
                 <div className="flex items-start gap-3 text-slate-300">
-                  <MapPin className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-white font-medium block">Physical Address</span>
                     <span className="text-xs text-slate-400">Ojijo Rd, Nairobi (Near Parklands & Westlands boundary)</span>
@@ -106,7 +106,7 @@ export const ReviewsAndLocation: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3 text-slate-300">
-                  <Clock className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <Clock className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-white font-medium block">Operating Hours</span>
                     <span className="text-xs text-slate-400">Open · Closes 4:00 PM (24/7 Phone & WhatsApp Dispatch)</span>
@@ -114,13 +114,13 @@ export const ReviewsAndLocation: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3 text-slate-300">
-                  <Phone className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <Phone className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-white font-medium block">Direct Dispatch Hotline</span>
                     <a
                       href={`tel:${COMPANY_INFO.phoneInternational}`}
                       onClick={() => sound.playPhoneBuzz()}
-                      className="text-cyan-400 font-bold hover:underline"
+                      className="text-emerald-400 font-bold hover:underline"
                     >
                       {COMPANY_INFO.phone}
                     </a>
@@ -134,7 +134,7 @@ export const ReviewsAndLocation: React.FC = () => {
                   <span className="text-[11px] uppercase tracking-wider text-slate-400 font-semibold block">
                     Google Maps Plus Code
                   </span>
-                  <span className="font-mono text-sm font-bold text-cyan-300 truncate block">
+                  <span className="font-mono text-sm font-bold text-emerald-300 truncate block">
                     {COMPANY_INFO.plusCode}
                   </span>
                 </div>
@@ -165,7 +165,7 @@ export const ReviewsAndLocation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => sound.playClick()}
-                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/25 transition-all"
+                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25 transition-all font-display"
               >
                 <Navigation className="w-4 h-4" />
                 <span>Get Driving Directions</span>
@@ -177,9 +177,9 @@ export const ReviewsAndLocation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => sound.playCarChirp()}
-                className="py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/40 transition-all"
+                className="py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-emerald-500/30 text-emerald-300 font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/40 transition-all"
               >
-                <WhatsAppIcon className="w-4 h-4 fill-white" />
+                <WhatsAppIcon className="w-4 h-4 fill-emerald-400" />
                 <span>WhatsApp</span>
               </a>
             </div>
@@ -198,13 +198,13 @@ export const ReviewsAndLocation: React.FC = () => {
                 <h4 className="text-lg font-bold font-display text-white">
                   Customer Experiences & Feedback
                 </h4>
-                <span className="text-xs text-cyan-400 font-semibold">100% Satisfaction Guarantee</span>
+                <span className="text-xs text-emerald-400 font-semibold">100% Satisfaction Guarantee</span>
               </div>
 
               {GOOGLE_REVIEWS.map((review, i) => (
                 <div
                   key={i}
-                  className="p-5 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-cyan-500/20 space-y-2.5 shadow-lg"
+                  className="p-5 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-emerald-500/20 space-y-2.5 shadow-lg"
                 >
                   <div className="flex items-center justify-between">
                     <div>
@@ -225,9 +225,9 @@ export const ReviewsAndLocation: React.FC = () => {
             </div>
 
             {/* Trust Banner */}
-            <div className="p-4 rounded-2xl bg-gradient-to-r from-cyan-950/60 to-blue-950/60 border border-cyan-500/30 flex items-center justify-between gap-4 mt-2">
+            <div className="p-4 rounded-2xl bg-gradient-to-r from-emerald-950/60 to-teal-950/60 border border-emerald-500/30 flex items-center justify-between gap-4 mt-2">
               <div className="flex items-center gap-3">
-                <ShieldCheck className="w-6 h-6 text-cyan-400 shrink-0" />
+                <ShieldCheck className="w-6 h-6 text-emerald-400 shrink-0" />
                 <div className="text-xs">
                   <span className="font-bold text-white block">Transparent Terms & Full Inspection</span>
                   <span className="text-slate-300">Complete pre-drive checklist signed before every handover.</span>
@@ -238,13 +238,64 @@ export const ReviewsAndLocation: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => sound.playClick()}
-                className="text-xs text-cyan-400 font-bold hover:underline whitespace-nowrap"
+                className="text-xs text-emerald-400 font-bold hover:underline whitespace-nowrap"
               >
                 View on Maps →
               </a>
             </div>
           </motion.div>
         </div>
+
+        {/* Interactive Google Maps Embed with Pin on Ojijo Rd */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-8 rounded-3xl overflow-hidden border border-emerald-500/30 bg-slate-900/90 shadow-2xl relative"
+        >
+          <div className="p-4 sm:p-5 bg-slate-950/90 border-b border-emerald-500/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-sm">
+                <MapPin className="w-4 h-4" />
+              </div>
+              <div>
+                <span className="text-white font-bold text-sm sm:text-base block font-display">
+                  Interactive Depot Pin: Ojijo Rd, Nairobi
+                </span>
+                <span className="text-xs text-slate-400">
+                  Coordinates: -1.2675238, 36.8115198 · Near Parklands & Westlands Hub
+                </span>
+              </div>
+            </div>
+            <a
+              href={COMPANY_INFO.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => sound.playClick()}
+              className="px-4 py-2 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+            >
+              <Navigation className="w-3.5 h-3.5" />
+              <span>Open in Google Maps App</span>
+              <ExternalLink className="w-3 h-3 ml-0.5" />
+            </a>
+          </div>
+
+          {/* Map iframe */}
+          <div className="w-full h-72 sm:h-96 relative bg-slate-950">
+            <iframe
+              title="Prime Carhire Ojijo Rd Map Location"
+              src={COMPANY_INFO.embedMapUrl}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full filter saturate-125"
+            />
+          </div>
+        </motion.div>
       </div>
     </section>
   );

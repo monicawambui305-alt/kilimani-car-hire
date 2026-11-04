@@ -30,7 +30,7 @@ export const LoyaltyRewards: React.FC = () => {
       return {
         name: 'Platinum Elite VIP',
         discount: '20% OFF + Free Airport Transfers Every Trip',
-        badgeColor: 'bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 font-bold',
+        badgeColor: 'bg-gradient-to-r from-emerald-400 to-teal-500 text-slate-950 font-bold',
         perks: [
           'Unlimited Free JKIA & Wilson Airport VIP Transfers',
           'Zero Security Deposit on all self-drive hires',
@@ -42,7 +42,7 @@ export const LoyaltyRewards: React.FC = () => {
       return {
         name: 'Gold Executive (5th Booking Milestone)',
         discount: '15% OFF on 5th Rental + Priority Dispatch',
-        badgeColor: 'bg-gradient-to-r from-cyan-400 to-teal-400 text-slate-950 font-bold',
+        badgeColor: 'bg-gradient-to-r from-emerald-400 to-teal-400 text-slate-950 font-bold',
         perks: [
           '15% Off Your 5th Rental',
           'Free JKIA Airport Transfer on any 7+ Day Rental',
@@ -54,7 +54,7 @@ export const LoyaltyRewards: React.FC = () => {
       return {
         name: 'Silver Preferred Member',
         discount: 'Next Milestone: Unlock 15% OFF on 5th Rental',
-        badgeColor: 'bg-slate-800 text-cyan-300 border border-cyan-500/30',
+        badgeColor: 'bg-slate-800 text-emerald-300 border border-emerald-500/30',
         perks: [
           'Earn progress toward 15% OFF milestone',
           'Complimentary 4G WiFi hotspot or baby car seat on request',
@@ -76,7 +76,7 @@ export const LoyaltyRewards: React.FC = () => {
   };
 
   return (
-    <section id="loyalty-rewards" className="relative py-16 sm:py-24 bg-slate-950 overflow-hidden border-t border-cyan-500/20">
+    <section id="loyalty-rewards" className="relative py-16 sm:py-24 bg-slate-950 overflow-hidden border-t border-emerald-500/20">
       {/* High-Clarity Background Image: VIP Concierge & Hospitality Lounge */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
@@ -98,8 +98,8 @@ export const LoyaltyRewards: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3"
         >
-          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-cyan-400 uppercase">
-            <Crown className="w-4 h-4 text-cyan-400 shrink-0" />
+          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-emerald-400 uppercase">
+            <Crown className="w-4 h-4 text-emerald-400 shrink-0" />
             <span>Prime Prestige Circle</span>
             <span aria-hidden="true">·</span>
             <span>Repeat Client Rewards</span>
@@ -135,15 +135,15 @@ export const LoyaltyRewards: React.FC = () => {
               </p>
               <ul className="space-y-2.5 text-xs text-slate-300 pt-2 border-t border-slate-800">
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Free child seat / baby booster upon request</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>4G Portable Wi-Fi hotspot on safari trips</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Fast WhatsApp digital booking verification</span>
                 </li>
               </ul>
@@ -157,17 +157,17 @@ export const LoyaltyRewards: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="p-6 sm:p-8 rounded-3xl bg-slate-900/90 backdrop-blur-md border-2 border-cyan-400 space-y-5 flex flex-col justify-between shadow-2xl shadow-cyan-950/60 relative"
+            className="p-6 sm:p-8 rounded-3xl bg-slate-900/90 backdrop-blur-md border-2 border-emerald-400 space-y-5 flex flex-col justify-between shadow-2xl shadow-emerald-950/60 relative"
           >
-            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 text-[10px] font-black uppercase tracking-wider shadow-md">
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-emerald-400 to-teal-500 text-slate-950 text-[10px] font-black uppercase tracking-wider shadow-md font-display">
               Most Popular Milestone
             </div>
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full bg-cyan-500/20 text-xs font-bold text-cyan-300 border border-cyan-500/40">
+                <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-xs font-bold text-emerald-300 border border-emerald-500/40">
                   Tier 2 (5–9 Hires)
                 </span>
-                <Award className="w-5 h-5 text-cyan-400" />
+                <Award className="w-5 h-5 text-emerald-400" />
               </div>
               <h3 className="text-xl sm:text-2xl font-black font-display text-white">Gold Executive</h3>
               <p className="text-xs text-slate-200 leading-relaxed">
@@ -175,19 +175,19 @@ export const LoyaltyRewards: React.FC = () => {
               </p>
               <ul className="space-y-2.5 text-xs text-slate-200 pt-2 border-t border-slate-800">
                 <li className="flex items-center gap-2 font-semibold text-white">
-                  <Percent className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <Percent className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>15% OFF on Your 5th Rental Booking</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Plane className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <Plane className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Free JKIA Airport Transfer on 7+ Day Hires</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <Clock className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Priority 10-Minute Doorstep Delivery</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Expedited Security Deposit Refund (Same Day)</span>
                 </li>
               </ul>
@@ -195,7 +195,7 @@ export const LoyaltyRewards: React.FC = () => {
             <div className="pt-2">
               <button
                 onClick={handleClaimViaWhatsApp}
-                className="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-xs uppercase tracking-wider transition-all shadow-md shadow-cyan-500/20 cursor-pointer"
+                className="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-black text-xs uppercase tracking-wider transition-all shadow-md shadow-emerald-500/20 cursor-pointer font-display"
               >
                 Claim 15% 5th Booking Reward
               </button>
@@ -208,14 +208,14 @@ export const LoyaltyRewards: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.25 }}
-            className="p-6 sm:p-8 rounded-3xl bg-slate-900/80 backdrop-blur-md border border-cyan-500/30 space-y-5 flex flex-col justify-between"
+            className="p-6 sm:p-8 rounded-3xl bg-slate-900/80 backdrop-blur-md border border-emerald-500/30 space-y-5 flex flex-col justify-between"
           >
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full bg-blue-500/20 text-xs font-bold text-blue-300 border border-blue-500/40">
+                <span className="px-3 py-1 rounded-full bg-teal-500/20 text-xs font-bold text-teal-300 border border-teal-500/40">
                   Tier 3 (10+ Hires)
                 </span>
-                <Crown className="w-5 h-5 text-blue-400" />
+                <Crown className="w-5 h-5 text-teal-400" />
               </div>
               <h3 className="text-xl font-bold font-display text-white">Platinum VIP</h3>
               <p className="text-xs text-slate-300 leading-relaxed">
@@ -223,24 +223,24 @@ export const LoyaltyRewards: React.FC = () => {
               </p>
               <ul className="space-y-2.5 text-xs text-slate-300 pt-2 border-t border-slate-800">
                 <li className="flex items-center gap-2 font-semibold text-white">
-                  <Percent className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <Percent className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>20% OFF Ongoing Rental Discount</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Zero Security Deposit Required</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <Sparkles className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Guaranteed Free Vehicle Upgrade to V8 / Prado</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Plane className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <Plane className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>Complimentary VIP Airport Chauffeur Every Trip</span>
                 </li>
               </ul>
             </div>
-            <div className="text-[11px] text-cyan-400 font-semibold">Prestige Corporate Tier</div>
+            <div className="text-[11px] text-emerald-400 font-semibold">Prestige Corporate Tier</div>
           </motion.div>
         </div>
 
@@ -250,7 +250,7 @@ export const LoyaltyRewards: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="p-6 sm:p-10 rounded-3xl bg-slate-900/90 backdrop-blur-xl border border-cyan-500/30 shadow-2xl max-w-4xl mx-auto space-y-6"
+          className="p-6 sm:p-10 rounded-3xl bg-slate-900/90 backdrop-blur-xl border border-emerald-500/30 shadow-2xl max-w-4xl mx-auto space-y-6"
         >
           <div className="space-y-2 text-center">
             <h3 className="text-xl sm:text-2xl font-bold font-display text-white">
@@ -265,7 +265,7 @@ export const LoyaltyRewards: React.FC = () => {
           <div className="space-y-3 pt-2">
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold uppercase text-slate-400">Past Bookings Completed</span>
-              <span className="text-sm font-bold text-cyan-300 bg-cyan-950/80 px-4 py-1 rounded-full border border-cyan-500/30">
+              <span className="text-sm font-bold text-emerald-300 bg-emerald-950/80 px-4 py-1 rounded-full border border-emerald-500/30">
                 {bookingCount} {bookingCount === 1 ? 'Booking' : 'Bookings'}
               </span>
             </div>
@@ -275,11 +275,11 @@ export const LoyaltyRewards: React.FC = () => {
               max="15"
               value={bookingCount}
               onChange={(e) => setBookingCount(parseInt(e.target.value))}
-              className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400"
+              className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-emerald-400"
             />
             <div className="flex justify-between text-[11px] text-slate-400">
               <span>1 Booking</span>
-              <span className="text-cyan-400 font-bold">5 Bookings (15% OFF)</span>
+              <span className="text-emerald-400 font-bold">5 Bookings (15% OFF)</span>
               <span>10+ Bookings (Platinum 20%)</span>
             </div>
           </div>
@@ -291,16 +291,16 @@ export const LoyaltyRewards: React.FC = () => {
               <span className="text-base sm:text-lg font-bold text-white block">
                 {currentTier.name}
               </span>
-              <span className="text-xs text-cyan-400 block font-semibold">
+              <span className="text-xs text-emerald-400 block font-semibold">
                 ✦ {currentTier.discount}
               </span>
             </div>
 
             <button
               onClick={handleClaimViaWhatsApp}
-              className="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-2 shadow-lg shadow-emerald-950/40 shrink-0 cursor-pointer"
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-lg shadow-emerald-950/40 shrink-0 cursor-pointer font-display"
             >
-              <WhatsAppIcon className="w-4 h-4 fill-white" />
+              <WhatsAppIcon className="w-4 h-4 fill-slate-950" />
               <span>Verify & Apply on WhatsApp</span>
             </button>
           </div>

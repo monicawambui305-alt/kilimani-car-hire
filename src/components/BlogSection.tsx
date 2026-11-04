@@ -51,7 +51,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
   };
 
   return (
-    <section id="blogs" className="relative py-16 sm:py-24 bg-slate-950 border-t border-cyan-500/20 overflow-hidden">
+    <section id="blogs" className="relative py-16 sm:py-24 bg-slate-950 border-t border-emerald-500/20 overflow-hidden">
       {/* High-Clarity Background Image: Scenic Nairobi Skyline & Safari Sunset */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
@@ -73,7 +73,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3 sm:space-y-4"
         >
-          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-cyan-400 uppercase">
+          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-emerald-400 uppercase">
             <BookOpen className="w-4 h-4 shrink-0" />
             <span>SEO Knowledge Hub & Travel Guides</span>
           </div>
@@ -105,7 +105,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                   }}
                   className={`px-3.5 sm:px-4 py-2 text-xs font-semibold rounded-xl whitespace-nowrap shrink-0 transition-all cursor-pointer ${
                     selectedCategory === cat
-                      ? 'bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 font-bold shadow-md shadow-cyan-500/20'
+                      ? 'bg-gradient-to-r from-emerald-400 to-teal-500 text-slate-950 font-bold shadow-md shadow-emerald-500/20'
                       : 'bg-slate-900/80 text-slate-300 hover:text-white border border-slate-800'
                   }`}
                 >
@@ -123,7 +123,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
               placeholder="Search guides or keywords..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-slate-950/90 border border-slate-700 rounded-xl pl-10 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+              className="w-full bg-slate-950/90 border border-slate-700 rounded-xl pl-10 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400"
             />
           </div>
         </motion.div>
@@ -138,7 +138,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.55, delay: (idx % 3) * 0.1, ease: [0.16, 1, 0.3, 1] }}
               whileHover={{ y: -6 }}
-              className="group bg-slate-900/85 rounded-3xl border border-cyan-500/20 overflow-hidden hover:border-cyan-400/50 transition-all duration-300 flex flex-col justify-between hover:shadow-2xl hover:shadow-cyan-950/40 backdrop-blur-md"
+              className="group bg-slate-900/85 rounded-3xl border border-emerald-500/20 overflow-hidden hover:border-emerald-400/50 transition-all duration-300 flex flex-col justify-between hover:shadow-2xl hover:shadow-emerald-950/40 backdrop-blur-md"
             >
               <div>
                 {/* Hero Thumbnail */}
@@ -154,7 +154,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 px-3 py-1 rounded-lg bg-slate-950/85 backdrop-blur-md text-[11px] font-semibold text-cyan-300 border border-cyan-500/30">
+                  <div className="absolute top-3 left-3 px-3 py-1 rounded-lg bg-slate-950/85 backdrop-blur-md text-[11px] font-semibold text-emerald-300 border border-emerald-500/30">
                     {post.category}
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
 
                   <h3
                     onClick={() => handleOpenArticle(post)}
-                    className="text-base sm:text-lg font-bold text-white font-display group-hover:text-cyan-400 transition-colors cursor-pointer line-clamp-2 break-words"
+                    className="text-base sm:text-lg font-bold text-white font-display group-hover:text-emerald-400 transition-colors cursor-pointer line-clamp-2 break-words"
                   >
                     {post.title}
                   </h3>
@@ -179,7 +179,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                   </p>
 
                   {/* Target Keywords */}
-                  <div className="pt-2 flex flex-wrap gap-1.5 text-[11px] text-cyan-400/80">
+                  <div className="pt-2 flex flex-wrap gap-1.5 text-[11px] text-emerald-400/80">
                     {post.targetKeywords.slice(0, 3).map((kw) => (
                       <span
                         key={kw}
@@ -197,7 +197,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                 <span className="text-slate-400 font-medium">By {post.author}</span>
                 <button
                   onClick={() => handleOpenArticle(post)}
-                  className="font-bold text-cyan-400 group-hover:text-cyan-300 flex items-center gap-1 cursor-pointer"
+                  className="font-bold text-emerald-400 group-hover:text-emerald-300 flex items-center gap-1 cursor-pointer font-display"
                 >
                   <span>Read Guide</span>
                   <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -217,7 +217,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ duration: 0.3 }}
-              className="bg-slate-900 border border-cyan-500/30 w-full max-w-4xl rounded-3xl overflow-hidden shadow-2xl my-8 relative text-white"
+              className="bg-slate-900 border border-emerald-500/30 w-full max-w-4xl rounded-3xl overflow-hidden shadow-2xl my-8 relative text-white"
             >
               {/* Close Button */}
               <button
@@ -240,7 +240,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 space-y-2">
-                  <div className="inline-block px-3 py-1 rounded-full bg-cyan-950/90 border border-cyan-400/40 text-xs font-semibold text-cyan-300">
+                  <div className="inline-block px-3 py-1 rounded-full bg-emerald-950/90 border border-emerald-400/40 text-xs font-semibold text-emerald-300">
                     {activeArticle.category}
                   </div>
                   <h1 className="text-xl sm:text-3xl font-black font-display text-white leading-tight">
@@ -260,13 +260,13 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
               <div className="p-6 sm:p-10 space-y-8">
                 {/* Table of Contents */}
                 <div className="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-3">
-                  <span className="text-xs font-bold uppercase tracking-wider text-cyan-400 block">
+                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-400 block font-display">
                     Table of Contents
                   </span>
                   <ul className="space-y-1.5 text-xs sm:text-sm text-slate-300">
                     {activeArticle.tableOfContents.map((item, idx) => (
                       <li key={idx} className="flex items-center gap-2">
-                        <span className="text-cyan-400 font-bold">{idx + 1}.</span>
+                        <span className="text-emerald-400 font-bold">{idx + 1}.</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -287,10 +287,10 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                       ))}
 
                       {sec.bulletPoints && (
-                        <ul className="space-y-2 pt-2 text-sm text-slate-300 pl-4 border-l-2 border-cyan-400">
+                        <ul className="space-y-2 pt-2 text-sm text-slate-300 pl-4 border-l-2 border-emerald-400">
                           {sec.bulletPoints.map((bp, bpIdx) => (
                             <li key={bpIdx} className="flex items-start gap-2">
-                              <span className="text-cyan-400 font-bold">•</span>
+                              <span className="text-emerald-400 font-bold">•</span>
                               <span>{bp}</span>
                             </li>
                           ))}
@@ -298,7 +298,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                       )}
 
                       {sec.callout && (
-                        <div className="p-4 rounded-xl bg-cyan-950/60 border border-cyan-500/30 text-xs sm:text-sm text-cyan-200">
+                        <div className="p-4 rounded-xl bg-emerald-950/60 border border-emerald-500/30 text-xs sm:text-sm text-emerald-200">
                           <strong>💡 Pro-Tip: </strong>
                           {sec.callout}
                         </div>
@@ -311,7 +311,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                 {activeArticle.faqs && activeArticle.faqs.length > 0 && (
                   <div className="pt-6 border-t border-slate-800 space-y-4">
                     <h3 className="text-lg font-bold font-display text-white flex items-center gap-2">
-                      <HelpCircle className="w-5 h-5 text-cyan-400" />
+                      <HelpCircle className="w-5 h-5 text-emerald-400" />
                       Frequently Asked Questions
                     </h3>
                     <div className="space-y-3">
@@ -326,7 +326,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                           >
                             <span>{faq.question}</span>
                             <ChevronDown
-                              className={`w-4 h-4 text-cyan-400 transition-transform ${
+                              className={`w-4 h-4 text-emerald-400 transition-transform ${
                                 openFaqIndex === fIdx ? 'rotate-180' : ''
                               }`}
                             />
@@ -354,7 +354,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenBooking }) => {
                         setActiveArticle(null);
                         onOpenBooking();
                       }}
-                      className="flex-1 sm:flex-none px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 font-bold text-xs uppercase tracking-wider cursor-pointer"
+                      className="flex-1 sm:flex-none px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 text-slate-950 font-bold text-xs uppercase tracking-wider cursor-pointer font-display"
                     >
                       Reserve Now
                     </button>

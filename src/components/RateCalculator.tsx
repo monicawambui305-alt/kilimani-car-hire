@@ -77,7 +77,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
   };
 
   return (
-    <section id="calculator" className="py-16 sm:py-24 bg-slate-950 relative overflow-hidden border-t border-cyan-500/20">
+    <section id="calculator" className="py-16 sm:py-24 bg-slate-950 relative overflow-hidden border-t border-emerald-500/20">
       {/* High-Clarity Background Image: Modern Cockpit Interior Navigation */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
@@ -98,7 +98,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3"
         >
-          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-cyan-400 uppercase">
+          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-emerald-400 uppercase">
             <Calculator className="w-4 h-4 shrink-0" />
             <span>Interactive Rental Trip Configurator</span>
           </div>
@@ -117,12 +117,12 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-7 bg-slate-900/85 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-cyan-500/30 shadow-2xl space-y-6"
+            className="lg:col-span-7 bg-slate-900/85 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-emerald-500/30 shadow-2xl space-y-6"
           >
             {/* Vehicle Selector */}
             <div className="space-y-2">
               <label className="text-xs font-semibold uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
-                <Car className="w-4 h-4 text-cyan-400" />
+                <Car className="w-4 h-4 text-emerald-400" />
                 Select Vehicle
               </label>
               <select
@@ -131,7 +131,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
                   sound.playClick();
                   setSelectedVehicleId(e.target.value);
                 }}
-                className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 cursor-pointer"
+                className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400 cursor-pointer"
               >
                 {FLEET_DATA.map((car) => (
                   <option key={car.id} value={car.id}>
@@ -145,10 +145,10 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <label className="text-xs font-semibold uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
-                  <Calendar className="w-4 h-4 text-cyan-400" />
+                  <Calendar className="w-4 h-4 text-emerald-400" />
                   Rental Duration
                 </label>
-                <span className="text-sm font-bold text-cyan-300 bg-cyan-950/80 px-3 py-1 rounded-full border border-cyan-500/30">
+                <span className="text-sm font-bold text-emerald-300 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-500/30">
                   {days} {days === 1 ? 'Day' : 'Days'}
                 </span>
               </div>
@@ -158,7 +158,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
                 max="30"
                 value={days}
                 onChange={(e) => setDays(parseInt(e.target.value))}
-                className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400"
+                className="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-emerald-400"
               />
               <div className="flex justify-between text-[11px] text-slate-400">
                 <span>1 Day</span>
@@ -182,7 +182,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
                 }}
                 className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                   withChauffeur
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md'
+                    ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 font-display shadow-md'
                     : 'bg-slate-800 text-slate-400 border border-slate-700'
                 }`}
               >
@@ -193,7 +193,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
             {/* Delivery Location */}
             <div className="space-y-2">
               <label className="text-xs font-semibold uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
-                <MapPin className="w-4 h-4 text-cyan-400" />
+                <MapPin className="w-4 h-4 text-emerald-400" />
                 Handover Location
               </label>
               <select
@@ -202,7 +202,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
                   sound.playClick();
                   setPickupLocation(e.target.value);
                 }}
-                className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 cursor-pointer"
+                className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400 cursor-pointer"
               >
                 <option value="ojijo_depot">Ojijo Rd Depot Handover (Free Walk-in)</option>
                 <option value="westlands_doorstep">Westlands / Parklands Doorstep Delivery (FREE)</option>
@@ -225,7 +225,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
                   }}
                   className={`p-3 rounded-xl text-xs font-medium border text-center transition-all cursor-pointer ${
                     childSeat
-                      ? 'bg-cyan-950/80 border-cyan-400 text-cyan-300'
+                      ? 'bg-emerald-950/80 border-emerald-400 text-emerald-300'
                       : 'bg-slate-950 border-slate-800 text-slate-400'
                   }`}
                 >
@@ -239,7 +239,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
                   }}
                   className={`p-3 rounded-xl text-xs font-medium border text-center transition-all cursor-pointer ${
                     wifiHotspot
-                      ? 'bg-cyan-950/80 border-cyan-400 text-cyan-300'
+                      ? 'bg-emerald-950/80 border-emerald-400 text-emerald-300'
                       : 'bg-slate-950 border-slate-800 text-slate-400'
                   }`}
                 >
@@ -253,7 +253,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
                   }}
                   className={`p-3 rounded-xl text-xs font-medium border text-center transition-all cursor-pointer ${
                     extraDriver
-                      ? 'bg-cyan-950/80 border-cyan-400 text-cyan-300'
+                      ? 'bg-emerald-950/80 border-emerald-400 text-emerald-300'
                       : 'bg-slate-950 border-slate-800 text-slate-400'
                   }`}
                 >
@@ -269,11 +269,11 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
                 placeholder="Enter Promo Code (e.g. PRIME10)"
                 value={promoCode}
                 onChange={(e) => setPromoCode(e.target.value)}
-                className="flex-1 bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white uppercase placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+                className="flex-1 bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white uppercase placeholder-slate-500 focus:outline-none focus:border-emerald-400"
               />
               <button
                 type="submit"
-                className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 text-xs font-bold transition-all cursor-pointer"
+                className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-slate-700 text-xs font-bold transition-all cursor-pointer font-display"
               >
                 Apply
               </button>
@@ -286,18 +286,18 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-5 bg-slate-900/90 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-cyan-500/30 shadow-2xl space-y-6"
+            className="lg:col-span-5 bg-slate-900/90 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-emerald-500/30 shadow-2xl space-y-6"
           >
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <div>
-                <span className="text-[11px] font-semibold text-cyan-400 uppercase tracking-wider block">
+                <span className="text-[11px] font-semibold text-emerald-400 uppercase tracking-wider block">
                   Trip Summary
                 </span>
                 <h3 className="text-xl font-bold font-display text-white">
                   {selectedVehicle.name}
                 </h3>
               </div>
-              <span className="px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-500/40 text-xs font-mono font-bold text-cyan-300">
+              <span className="px-3 py-1 rounded-md bg-emerald-950/80 border border-emerald-500/40 text-xs font-mono font-bold text-emerald-300">
                 {selectedVehicle.plateNumber}
               </span>
             </div>
@@ -307,7 +307,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
               <img
                 src={selectedVehicle.authenticImage}
                 alt={selectedVehicle.name}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center brightness-[0.88] contrast-[1.05]"
               />
             </div>
 
@@ -323,7 +323,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-400">Service:</span>
-                <span className="text-cyan-300 font-medium">
+                <span className="text-emerald-300 font-medium">
                   {withChauffeur ? 'With Professional Chauffeur' : 'Self-Drive'}
                 </span>
               </div>
@@ -340,7 +340,7 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
             {/* Blank Rate Slot as requested: Quotes provided via WhatsApp */}
             <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-1 text-center">
               <span className="text-xs text-slate-400 block">Rental Quotation:</span>
-              <span className="text-lg font-bold text-cyan-400 block font-display">
+              <span className="text-lg font-bold text-emerald-400 block font-display">
                 Personalized Rate on WhatsApp
               </span>
               <span className="text-[11px] text-slate-400 block">
@@ -351,9 +351,9 @@ export const RateCalculator: React.FC<RateCalculatorProps> = ({
             {/* Direct WhatsApp Action */}
             <button
               onClick={handleWhatsAppBooking}
-              className="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-xl shadow-emerald-950/40 transition-all cursor-pointer"
+              className="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-sm flex items-center justify-center gap-2 shadow-xl shadow-emerald-950/40 transition-all cursor-pointer font-display"
             >
-              <WhatsAppIcon className="w-4 h-4 fill-white" />
+              <WhatsAppIcon className="w-4 h-4 fill-slate-950" />
               <span>Request Quote on WhatsApp</span>
             </button>
           </motion.div>

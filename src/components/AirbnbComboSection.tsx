@@ -37,7 +37,7 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
   };
 
   return (
-    <section id="airbnb-combos" className="relative py-16 sm:py-24 bg-slate-950 border-t border-b border-cyan-500/20 overflow-hidden">
+    <section id="airbnb-combos" className="relative py-16 sm:py-24 bg-slate-950 border-t border-b border-emerald-500/20 overflow-hidden">
       {/* High-Clarity Background Image: Nairobi Luxury Airbnb Penthouse */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
@@ -59,8 +59,8 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3 sm:space-y-4"
         >
-          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-cyan-400 uppercase">
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-emerald-400 uppercase">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>Hospitality & Mobility Fusion</span>
             <span aria-hidden="true">·</span>
             <span>Ojijo Rd, Parklands & Westlands Hub</span>
@@ -80,10 +80,10 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-40px' }}
             transition={{ duration: 0.55, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
-            className="p-6 sm:p-8 rounded-3xl bg-slate-900/80 backdrop-blur-md border border-cyan-500/25 shadow-xl space-y-4 flex flex-col justify-between"
+            className="p-6 sm:p-8 rounded-3xl bg-slate-900/80 backdrop-blur-md border border-emerald-500/25 shadow-xl space-y-4 flex flex-col justify-between"
           >
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                 <KeyRound className="w-6 h-6" />
               </div>
               <h3 className="text-lg sm:text-xl font-bold font-display text-white">
@@ -93,7 +93,7 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
                 No need to hail taxis to an office. Our agent meets you at your apartment gate or reception with your pre-inspected car, digital contract, and verified inspection log.
               </p>
             </div>
-            <div className="pt-4 border-t border-slate-800 text-xs text-cyan-400 font-semibold flex items-center gap-1.5">
+            <div className="pt-4 border-t border-slate-800 text-xs text-emerald-400 font-semibold flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5" />
               <span>10-Minute Dispatch Radius</span>
             </div>
@@ -104,10 +104,10 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-40px' }}
             transition={{ duration: 0.55, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className="p-6 sm:p-8 rounded-3xl bg-slate-900/80 backdrop-blur-md border border-blue-500/25 shadow-xl space-y-4 flex flex-col justify-between"
+            className="p-6 sm:p-8 rounded-3xl bg-slate-900/80 backdrop-blur-md border border-teal-500/25 shadow-xl space-y-4 flex flex-col justify-between"
           >
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400">
+              <div className="w-12 h-12 rounded-2xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400">
                 <Plane className="w-6 h-6" />
               </div>
               <h3 className="text-lg sm:text-xl font-bold font-display text-white">
@@ -117,7 +117,7 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
                 Arriving via JKIA or Wilson Airport? Our chauffeur tracks your flight in real time, receives you curbside with luggage support, and delivers you straight to your residence.
               </p>
             </div>
-            <div className="pt-4 border-t border-slate-800 text-xs text-blue-400 font-semibold flex items-center gap-1.5">
+            <div className="pt-4 border-t border-slate-800 text-xs text-teal-400 font-semibold flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5" />
               <span>Expressway Toll Pre-cleared</span>
             </div>
@@ -128,10 +128,10 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-40px' }}
             transition={{ duration: 0.55, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="p-6 sm:p-8 rounded-3xl bg-slate-900/80 backdrop-blur-md border border-cyan-500/25 shadow-xl space-y-4 flex flex-col justify-between"
+            className="p-6 sm:p-8 rounded-3xl bg-slate-900/80 backdrop-blur-md border border-emerald-500/25 shadow-xl space-y-4 flex flex-col justify-between"
           >
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                 <Building2 className="w-6 h-6" />
               </div>
               <h3 className="text-lg sm:text-xl font-bold font-display text-white">
@@ -141,7 +141,7 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
                 Staying for 1 week, 1 month, or longer? Unlock bespoke long-term pricing, complimentary weekly vehicle detailing, and prioritized vehicle swap privileges.
               </p>
             </div>
-            <div className="pt-4 border-t border-slate-800 text-xs text-cyan-400 font-semibold flex items-center gap-1.5">
+            <div className="pt-4 border-t border-slate-800 text-xs text-emerald-400 font-semibold flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5" />
               <span>Complimentary Weekly Car Detailing</span>
             </div>
@@ -154,7 +154,7 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="p-6 sm:p-10 rounded-3xl bg-slate-900/85 backdrop-blur-xl border border-cyan-500/30 shadow-2xl space-y-6 max-w-4xl mx-auto"
+          className="p-6 sm:p-10 rounded-3xl bg-slate-900/85 backdrop-blur-xl border border-emerald-500/30 shadow-2xl space-y-6 max-w-4xl mx-auto"
         >
           <div className="space-y-2 text-center">
             <h3 className="text-xl sm:text-2xl font-bold font-display text-white">
@@ -167,18 +167,18 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
 
           <form onSubmit={handleCheckApartment} className="flex flex-col sm:flex-row gap-3">
             <div className="relative flex-1">
-              <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-cyan-400" />
+              <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-emerald-400" />
               <input
                 type="text"
                 placeholder="e.g. Ojijo Suites, Parklands, Westlands Mall, Yaya Towers..."
                 value={searchedApartment}
                 onChange={(e) => setSearchedApartment(e.target.value)}
-                className="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-slate-950 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+                className="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-slate-950 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400"
               />
             </div>
             <button
               type="submit"
-              className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/25 transition-all whitespace-nowrap cursor-pointer"
+              className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-emerald-500/25 transition-all whitespace-nowrap cursor-pointer font-display"
             >
               Check Delivery Zone
             </button>
@@ -188,7 +188,7 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="p-4 rounded-xl bg-cyan-950/70 border border-cyan-400/50 text-cyan-200 text-xs sm:text-sm flex items-center justify-between gap-4"
+              className="p-4 rounded-xl bg-emerald-950/70 border border-emerald-400/50 text-emerald-200 text-xs sm:text-sm flex items-center justify-between gap-4"
             >
               <span>{checkResult}</span>
               <button
@@ -197,7 +197,7 @@ export const AirbnbComboSection: React.FC<AirbnbComboSectionProps> = ({ onOpenBo
                   sound.playCarChirp();
                   onOpenBooking();
                 }}
-                className="px-4 py-1.5 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-xs shrink-0 cursor-pointer"
+                className="px-4 py-1.5 rounded-lg bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold text-xs shrink-0 cursor-pointer font-display"
               >
                 Book with Free Delivery
               </button>

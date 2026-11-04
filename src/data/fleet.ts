@@ -36,7 +36,10 @@ export const COMPANY_INFO = {
   address: 'Ojijo Rd, Parklands / Westlands, Nairobi, Kenya',
   plusCode: 'PRJ6+XJ Nairobi',
   hours: 'Open · Closes 4:00 PM (24/7 WhatsApp & Airport Dispatch)',
-  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=PRJ6%2BXJ+Nairobi'
+  latitude: -1.2675238,
+  longitude: 36.8115198,
+  mapsUrl: 'https://www.google.com/maps/place/Prime+Carhire/@-1.2676075,36.8109966,17z/data=!4m15!1m8!3m7!1s0x182f174a6dd5c661:0x4374c7b2a0b477bc!2sPrime+Carhire!8m2!3d-1.2675238!4d36.8115198!10e5!16s%2Fg%2F11zysl_98z!3m5!1s0x182f174a6dd5c661:0x4374c7b2a0b477bc!8m2!3d-1.2675238!4d36.8115198!16s%2Fg%2F11zysl_98z?authuser=0&entry=ttu&g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D',
+  embedMapUrl: 'https://maps.google.com/maps?q=-1.2675238,36.8115198&hl=en&z=17&output=embed'
 };
 
 export const FLEET_DATA: Vehicle[] = [

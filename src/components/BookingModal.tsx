@@ -98,7 +98,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
-      <div className="bg-slate-900 border border-cyan-500/30 rounded-3xl max-w-2xl w-full max-h-[92vh] overflow-y-auto p-6 sm:p-8 space-y-6 relative shadow-2xl shadow-cyan-950/60 my-auto text-white">
+      <div className="bg-slate-900 border border-emerald-500/30 rounded-3xl max-w-2xl w-full max-h-[92vh] overflow-y-auto p-6 sm:p-8 space-y-6 relative shadow-2xl shadow-emerald-950/60 my-auto text-white">
         <button
           onClick={() => {
             sound.playClick();
@@ -113,7 +113,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
         {!isSubmitted ? (
           <>
             <div>
-              <div className="flex items-center gap-2 text-xs font-semibold text-cyan-400 uppercase tracking-wider">
+              <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400 uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Prime Carhire Ojijo Rd · Instant Dispatch</span>
               </div>
@@ -138,7 +138,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       sound.playClick();
                       setVehicleId(e.target.value);
                     }}
-                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-cyan-400 cursor-pointer"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-400 cursor-pointer"
                   >
                     {FLEET_DATA.map((car) => (
                       <option key={car.id} value={car.id}>
@@ -158,7 +158,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       sound.playClick();
                       setServiceType(e.target.value);
                     }}
-                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-cyan-400 cursor-pointer"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-400 cursor-pointer"
                   >
                     <option value="self_drive">Self-Drive Rental</option>
                     <option value="chauffeur">With Professional Chauffeur</option>
@@ -178,7 +178,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     placeholder="e.g. John Kamau"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-400"
                   />
                 </div>
 
@@ -192,7 +192,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     placeholder="e.g. 0712 345 678"
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
-                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-400"
                   />
                 </div>
               </div>
@@ -208,7 +208,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     required
                     value={pickupDate}
                     onChange={(e) => setPickupDate(e.target.value)}
-                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-400"
                   />
                 </div>
 
@@ -221,7 +221,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     required
                     value={returnDate}
                     onChange={(e) => setReturnDate(e.target.value)}
-                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-400"
                   />
                 </div>
               </div>
@@ -237,7 +237,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     sound.playClick();
                     setDeliveryAddress(e.target.value);
                   }}
-                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-cyan-400 cursor-pointer"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-emerald-400 cursor-pointer"
                 >
                   <option value="Ojijo Rd Depot Handover (Parklands / Westlands)">Ojijo Rd Depot Handover (Walk-in / Free)</option>
                   <option value="Westlands Doorstep Delivery (Apartment / Hotel)">Westlands Doorstep Delivery (Apartment / Hotel)</option>
@@ -258,7 +258,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   placeholder="e.g. Flight arrives at 14:30 JKIA Terminal 1A, or heading to Naivasha for weekend..."
                   value={specialRequests}
                   onChange={(e) => setSpecialRequests(e.target.value)}
-                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none focus:border-cyan-400 resize-none"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-xs text-white focus:outline-none focus:border-emerald-400 resize-none"
                 />
               </div>
 
@@ -266,7 +266,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black rounded-xl text-sm shadow-xl shadow-cyan-500/20 transition-all cursor-pointer"
+                  className="w-full py-3.5 bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-black rounded-xl text-sm shadow-xl shadow-emerald-500/20 transition-all cursor-pointer font-display"
                 >
                   Confirm Reservation & Dispatch
                 </button>
@@ -280,7 +280,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             </div>
 
             <div>
-              <span className="text-xs font-semibold uppercase text-cyan-400 tracking-wider">
+              <span className="text-xs font-semibold uppercase text-emerald-400 tracking-wider">
                 Booking Reference: {bookingRef}
               </span>
               <h3 className="text-2xl font-bold text-white font-display mt-1">
@@ -288,7 +288,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 max-w-md mx-auto mt-2">
                 Thank you <strong className="text-white">{fullName}</strong>. Your request for the{' '}
-                <strong className="text-cyan-400">{selectedVehicle.name}</strong> ({selectedVehicle.plateNumber}) has been submitted to Prime Carhire Ojijo Rd.
+                <strong className="text-emerald-400">{selectedVehicle.name}</strong> ({selectedVehicle.plateNumber}) has been submitted to Prime Carhire Ojijo Rd.
               </p>
             </div>
 
@@ -303,7 +303,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-400">Service:</span>
-                <span className="text-cyan-300 font-medium">
+                <span className="text-emerald-300 font-medium">
                   {serviceType === 'chauffeur' ? 'With Chauffeur' : 'Self-Drive'}
                 </span>
               </div>
@@ -312,9 +312,9 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <button
                 onClick={handleSendToWhatsApp}
-                className="flex-1 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/50 cursor-pointer"
+                className="flex-1 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/50 cursor-pointer font-display"
               >
-                <WhatsAppIcon className="w-4 h-4 fill-white" />
+                <WhatsAppIcon className="w-4 h-4 fill-slate-950" />
                 <span>Dispatch Instant WhatsApp Alert</span>
               </button>
 

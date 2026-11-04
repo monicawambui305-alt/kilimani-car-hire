@@ -49,7 +49,7 @@ export const ContactUs: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[85vh] py-16 sm:py-24 bg-slate-950 overflow-hidden border-t border-cyan-500/20">
+    <section className="relative min-h-[85vh] py-16 sm:py-24 bg-slate-950 overflow-hidden border-t border-emerald-500/20">
       {/* High-Clarity Background Image: Prime Carhire Concierge & Dispatch Lounge */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
@@ -71,7 +71,7 @@ export const ContactUs: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3"
         >
-          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-cyan-400 uppercase">
+          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-emerald-400 uppercase">
             <Sparkles className="w-3.5 h-3.5" />
             <span>24/7 Dispatch Desk & Walk-in Depot</span>
           </div>
@@ -93,7 +93,7 @@ export const ContactUs: React.FC = () => {
             className="lg:col-span-5 space-y-6"
           >
             {/* Quick Action Hotline Card */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/85 backdrop-blur-md border border-cyan-500/30 shadow-2xl space-y-6">
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/85 backdrop-blur-md border border-emerald-500/30 shadow-2xl space-y-6">
               <h3 className="text-xl font-bold font-display text-white">
                 Direct Contact Channels
               </h3>
@@ -101,7 +101,7 @@ export const ContactUs: React.FC = () => {
               <div className="space-y-4 text-sm">
                 {/* Phone Hotline */}
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
-                  <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div className="min-w-0 flex-1">
@@ -109,11 +109,11 @@ export const ContactUs: React.FC = () => {
                     <a
                       href={`tel:${COMPANY_INFO.phoneInternational}`}
                       onClick={() => sound.playPhoneBuzz()}
-                      className="text-base sm:text-lg font-bold text-white hover:text-cyan-400 transition-colors"
+                      className="text-base sm:text-lg font-bold text-white hover:text-emerald-400 transition-colors"
                     >
                       {COMPANY_INFO.phone}
                     </a>
-                    <span className="text-[11px] text-cyan-400 block mt-0.5">Instant Call / Callback Guarantee</span>
+                    <span className="text-[11px] text-emerald-400 block mt-0.5">Instant Call / Callback Guarantee</span>
                   </div>
                 </div>
 
@@ -139,7 +139,7 @@ export const ContactUs: React.FC = () => {
 
                 {/* Physical Location */}
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
-                  <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div className="min-w-0 flex-1">
@@ -153,7 +153,7 @@ export const ContactUs: React.FC = () => {
 
                 {/* Operating Hours */}
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-950/80 border border-slate-800">
-                  <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div className="min-w-0 flex-1">
@@ -161,7 +161,7 @@ export const ContactUs: React.FC = () => {
                     <p className="text-sm font-semibold text-white">
                       Open · Closes 4:00 PM
                     </p>
-                    <span className="text-[11px] text-cyan-400 block mt-0.5">24/7 Airport & Emergency Roadside Support</span>
+                    <span className="text-[11px] text-emerald-400 block mt-0.5">24/7 Airport & Emergency Roadside Support</span>
                   </div>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export const ContactUs: React.FC = () => {
                   <span className="text-[10px] uppercase font-semibold text-slate-400 block">
                     Google Maps Plus Code
                   </span>
-                  <span className="font-mono text-sm font-bold text-cyan-300">
+                  <span className="font-mono text-sm font-bold text-emerald-300">
                     {COMPANY_INFO.plusCode}
                   </span>
                 </div>
@@ -188,7 +188,7 @@ export const ContactUs: React.FC = () => {
                     href={COMPANY_INFO.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-1.5 rounded-lg bg-cyan-600/30 hover:bg-cyan-600/50 text-cyan-300 border border-cyan-500/30"
+                    className="p-1.5 rounded-lg bg-emerald-600/30 hover:bg-emerald-600/50 text-emerald-300 border border-emerald-500/30"
                     title="Open on Google Maps"
                   >
                     <ExternalLink className="w-4 h-4" />
@@ -206,7 +206,7 @@ export const ContactUs: React.FC = () => {
             transition={{ duration: 0.65, delay: 0.2 }}
             className="lg:col-span-7"
           >
-            <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/85 backdrop-blur-md border border-cyan-500/30 shadow-2xl space-y-6">
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/85 backdrop-blur-md border border-emerald-500/30 shadow-2xl space-y-6">
               <div className="flex items-center justify-between border-b border-slate-800 pb-4">
                 <div>
                   <h3 className="text-xl font-bold font-display text-white">
@@ -216,7 +216,7 @@ export const ContactUs: React.FC = () => {
                     Fill this quick form and our fleet manager on Ojijo Rd will confirm pricing and vehicle allocation immediately.
                   </p>
                 </div>
-                <span className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold shrink-0">
+                <span className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold shrink-0">
                   Quick Reply
                 </span>
               </div>
@@ -230,16 +230,16 @@ export const ContactUs: React.FC = () => {
                   <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h4 className="text-xl font-bold text-white">Inquiry Received Successfully!</h4>
+                  <h4 className="text-xl font-bold text-white font-display">Inquiry Received Successfully!</h4>
                   <p className="text-sm text-slate-300 max-w-md mx-auto">
                     Thank you {name || 'valued client'}. Our dispatch desk on Ojijo Rd has received your request for the {carInterest}.
                   </p>
                   <div className="pt-4 flex flex-wrap items-center justify-center gap-3">
                     <button
                       onClick={handleSendToWhatsApp}
-                      className="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-2 shadow-lg cursor-pointer"
+                      className="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-lg cursor-pointer font-display"
                     >
-                      <WhatsAppIcon className="w-4 h-4 fill-white" />
+                      <WhatsAppIcon className="w-4 h-4 fill-slate-950" />
                       <span>Chat Immediately on WhatsApp</span>
                     </button>
                     <button
@@ -261,7 +261,7 @@ export const ContactUs: React.FC = () => {
                         placeholder="e.g. David Mwangi"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400"
+                        className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400"
                       />
                     </div>
                     <div className="space-y-1.5">
@@ -272,7 +272,7 @@ export const ContactUs: React.FC = () => {
                         placeholder="e.g. 0712 345 678"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400"
+                        className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400"
                       />
                     </div>
                   </div>
@@ -285,7 +285,7 @@ export const ContactUs: React.FC = () => {
                         sound.playClick();
                         setCarInterest(e.target.value);
                       }}
-                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 cursor-pointer"
+                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400 cursor-pointer"
                     >
                       {FLEET_DATA.map((v) => (
                         <option key={v.id} value={v.name}>
@@ -302,14 +302,14 @@ export const ContactUs: React.FC = () => {
                       placeholder="Specify your pickup date, number of days, self-drive or chauffeured, and whether you require doorstep delivery in Westlands / Parklands or airport reception..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 resize-none"
+                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400 resize-none"
                     />
                   </div>
 
                   <div className="pt-2 flex flex-col sm:flex-row gap-3">
                     <button
                       type="submit"
-                      className="flex-1 py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-sm tracking-wide shadow-xl shadow-cyan-500/25 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                      className="flex-1 py-3.5 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-black text-sm tracking-wide shadow-xl shadow-emerald-500/25 transition-all flex items-center justify-center gap-2 cursor-pointer font-display"
                     >
                       <Send className="w-4 h-4" />
                       <span>Submit Inquiry to Dispatch</span>
@@ -317,9 +317,9 @@ export const ContactUs: React.FC = () => {
                     <button
                       type="button"
                       onClick={handleSendToWhatsApp}
-                      className="py-3.5 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/40 cursor-pointer"
+                      className="py-3.5 px-6 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-300 border border-emerald-500/30 font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-lg cursor-pointer"
                     >
-                      <WhatsAppIcon className="w-4 h-4 fill-white" />
+                      <WhatsAppIcon className="w-4 h-4 fill-emerald-400" />
                       <span>Direct WhatsApp</span>
                     </button>
                   </div>

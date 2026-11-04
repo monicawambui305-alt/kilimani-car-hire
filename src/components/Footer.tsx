@@ -14,16 +14,17 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
   const handleNav = (tabId: string) => {
     sound.playClick();
     setActiveTab(tabId);
+    window.location.hash = '#' + (tabId === 'home' ? '' : tabId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <footer className="bg-slate-950 border-t border-cyan-500/20 text-slate-400 text-xs">
+    <footer className="bg-slate-950 border-t border-emerald-500/20 text-slate-400 text-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Loyalty Rewards VIP Callout Banner in Footer */}
-        <div className="mb-14 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-cyan-950/70 via-slate-900 to-blue-950/70 border border-cyan-500/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+        <div className="mb-14 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-950/70 via-slate-900 to-teal-950/70 border border-emerald-500/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
           <div className="space-y-1.5 text-center md:text-left">
-            <div className="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
               <span>Repeat Client Loyalty Rewards</span>
             </div>
@@ -37,22 +38,17 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
           <div className="flex items-center gap-3 shrink-0">
             <button
               onClick={() => handleNav('loyalty')}
-              className="px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-bold text-xs uppercase tracking-wider whitespace-nowrap transition-all shadow-md shadow-cyan-500/20 cursor-pointer"
+              className="px-5 py-3 rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-300 hover:to-teal-400 text-slate-950 font-bold text-xs uppercase tracking-wider whitespace-nowrap transition-all shadow-md shadow-emerald-500/20 cursor-pointer"
             >
               View Loyalty Program
             </button>
-            {onOpenCompare && (
-              <button
-                onClick={() => {
-                  sound.playClick();
-                  onOpenCompare();
-                }}
-                className="px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 font-bold text-xs flex items-center gap-1.5 cursor-pointer"
-              >
-                <Scale className="w-3.5 h-3.5" />
-                <span>Compare</span>
-              </button>
-            )}
+            <button
+              onClick={() => handleNav('compare')}
+              className="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-emerald-300 border border-emerald-500/40 font-bold text-xs flex items-center gap-1.5 cursor-pointer"
+            >
+              <Scale className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Compare</span>
+            </button>
           </div>
         </div>
 
@@ -60,7 +56,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
           {/* Brand Col */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center font-display font-black text-slate-950 text-xl shadow-lg shadow-cyan-500/20">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 via-teal-500 to-emerald-700 flex items-center justify-center font-display font-black text-slate-950 text-xl shadow-lg shadow-emerald-500/20">
                 P
               </div>
               <span className="font-display text-xl font-bold text-white tracking-tight">
@@ -70,8 +66,8 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
             <p className="text-slate-300 leading-relaxed max-w-sm">
               Nairobi’s premier luxury and executive vehicle rental agency based on Ojijo Rd. Providing verified Kenyan fleet, 24/7 airport meet & greet, and rapid doorstep apartment delivery across Parklands, Westlands & Kilimani.
             </p>
-            <div className="flex items-center gap-2 text-cyan-400 text-xs">
-              <ShieldCheck className="w-4 h-4 text-cyan-400" />
+            <div className="flex items-center gap-2 text-emerald-400 text-xs">
+              <ShieldCheck className="w-4 h-4 text-emerald-400" />
               <span className="font-semibold text-white">100% Insured Fleet</span>
               <span className="text-slate-600">·</span>
               <span className="text-slate-400">Ojijo Rd Depot</span>
@@ -81,13 +77,13 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
           {/* Quick Links */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="font-semibold text-white tracking-wider uppercase text-[11px]">
-              Navigation
+              Pages & Navigation
             </h4>
             <ul className="space-y-2">
               <li>
                 <button
                   onClick={() => handleNav('home')}
-                  className="hover:text-cyan-400 transition-colors cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors cursor-pointer"
                 >
                   Home Overview
                 </button>
@@ -95,15 +91,23 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
               <li>
                 <button
                   onClick={() => handleNav('fleet')}
-                  className="hover:text-cyan-400 transition-colors cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors cursor-pointer"
                 >
                   Showroom Fleet
                 </button>
               </li>
               <li>
                 <button
+                  onClick={() => handleNav('compare')}
+                  className="hover:text-emerald-400 transition-colors cursor-pointer"
+                >
+                  Vehicle Comparison
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => handleNav('faq')}
-                  className="hover:text-cyan-400 transition-colors font-medium text-cyan-400 cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors font-medium text-emerald-400 cursor-pointer"
                 >
                   Rental FAQs
                 </button>
@@ -111,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
               <li>
                 <button
                   onClick={() => handleNav('airbnb-combos')}
-                  className="hover:text-cyan-400 transition-colors cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors cursor-pointer"
                 >
                   Airbnb Delivery
                 </button>
@@ -119,7 +123,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
               <li>
                 <button
                   onClick={() => handleNav('calculator')}
-                  className="hover:text-cyan-400 transition-colors cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors cursor-pointer"
                 >
                   Rate Calculator
                 </button>
@@ -127,7 +131,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
               <li>
                 <button
                   onClick={() => handleNav('loyalty')}
-                  className="hover:text-cyan-400 transition-colors text-cyan-400 font-medium cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors text-emerald-400 font-medium cursor-pointer"
                 >
                   Loyalty Rewards
                 </button>
@@ -135,15 +139,23 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
               <li>
                 <button
                   onClick={() => handleNav('blogs')}
-                  className="hover:text-cyan-400 transition-colors cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors cursor-pointer"
                 >
                   Nairobi Guides
                 </button>
               </li>
               <li>
                 <button
+                  onClick={() => handleNav('about')}
+                  className="hover:text-emerald-400 transition-colors cursor-pointer"
+                >
+                  Ojijo Rd Depot
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => handleNav('contact')}
-                  className="hover:text-cyan-400 transition-colors cursor-pointer"
+                  className="hover:text-emerald-400 transition-colors cursor-pointer"
                 >
                   Contact Desk
                 </button>
@@ -174,11 +186,11 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
             </h4>
             <div className="space-y-2.5">
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-cyan-400 shrink-0" />
+                <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
                 <a
                   href={`tel:${COMPANY_INFO.phoneInternational}`}
                   onClick={() => sound.playPhoneBuzz()}
-                  className="text-white hover:text-cyan-400 font-bold"
+                  className="text-white hover:text-emerald-400 font-bold"
                 >
                   {COMPANY_INFO.phone}
                 </a>
@@ -195,14 +207,14 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
                 </a>
               </div>
               <div className="flex items-start gap-2">
-                <Clock className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                <Clock className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                 <span>{COMPANY_INFO.hours}</span>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                 <div>
                   <span>Ojijo Rd, Nairobi, Kenya</span>
-                  <div className="text-[11px] text-cyan-400 font-mono mt-0.5">
+                  <div className="text-[11px] text-emerald-400 font-mono mt-0.5">
                     Plus Code: {COMPANY_INFO.plusCode}
                   </div>
                 </div>
@@ -212,7 +224,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onO
                   href={COMPANY_INFO.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-cyan-400 hover:underline"
+                  className="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:underline"
                 >
                   <span>View on Google Maps</span>
                   <ExternalLink className="w-3 h-3" />
